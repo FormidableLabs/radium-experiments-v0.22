@@ -1,9 +1,6 @@
-'use strict';
-
-const React = require('react');
-const Radium = require('radium');
-const { Style } = Radium;
-const { renderToString } = require('react-dom/server');
+import React from 'react';
+import Radium, { Style } from "radium";
+import { renderToString } from 'react-dom/server';
 
 class Composed extends React.Component {
   render() {

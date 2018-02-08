@@ -9,11 +9,19 @@
     "radium": "FormidableLabs/radium#32d50e4"
   },
   "devDependencies": {
+    "@std/esm": "^0.21.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
+  "@std/esm": "cjs",
   "scripts": {
     "node": "node node/index.js",
+    "babel:cjs-build": "BABEL_ENV=commonjs babel --out-file babel/dist/cjs.js babel/src/cjs.js",
+    "babel:cjs": "yarn run babel:cjs-build && node babel/dist/cjs.js",
+    "babel:esm-build": "babel --out-file babel/dist/esm.js babel/src/esm.js",
+    "babel:esm": "yarn run babel:esm-build && node -r @std/esm babel/dist/esm.js",
     "browser:umd": "open browser/umd/index.html"
   }
 }
