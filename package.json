@@ -13,6 +13,7 @@
     "react-dom": "^16.2.0"
   },
   "scripts": {
-    "node": "node node/index.js"
+    "node": "node node/index.js",
+    "browser:umd": "open browser/umd/index.html"
   }
 }

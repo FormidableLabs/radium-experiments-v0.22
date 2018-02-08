@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Radium Examples</title>
+  </head>
+  <body>
+    <h1>Radium Examples</h1>
+
+    <div id="app"></div>
+
+    <script src="https://unpkg.com/react@16.2.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16.2.0/umd/react-dom.production.min.js"></script>
+    <script src="../../node_modules/radium/dist/radium.js"></script>
+    <script>
+      (() => {
+        console.log("Radium object", Radium);
+
+        // Yay, Chrome supports classes!
+        class Composed extends React.Component {
+          render() {
+            return React.createElement('div', {
+              style: {
+                background: 'red',
+                display: 'flex'
+              }
+            }, "Radium div!!!");
+          }
+        }
+
+        const Wrapped = Radium.default(Composed);
+        const App = React.createElement(Wrapped, {
+          radiumConfig: {
+            userAgent: 'no-match-yo'
+          }
+        });
+
+        console.log("App", App);
+
+        ReactDOM.render(App, document.getElementById('app'));
+      })();
+    </script>
+  </body>
+</html>
