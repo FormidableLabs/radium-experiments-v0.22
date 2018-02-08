@@ -6,7 +6,7 @@
   "author": "Ryan Roemer <ryan.roemer@formidable.com>",
   "license": "MIT",
   "dependencies": {
-    "radium": "FormidableLabs/radium#task/es-build-ryan"
+    "radium": "FormidableLabs/radium#32d50e4"
   },
   "devDependencies": {
     "react": "^16.2.0",
