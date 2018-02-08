@@ -27,12 +27,7 @@
         }
 
         const Wrapped = Radium(Composed);
-        const App = React.createElement(Wrapped, {
-          radiumConfig: {
-            userAgent: 'no-match-yo'
-          }
-        });
-
+        const App = React.createElement(Wrapped);
         console.log("App", App);
 
         ReactDOM.render(App, document.getElementById('app'));
