@@ -5,6 +5,8 @@ Check out our breaking changes in `radium@0.22.x`.
 
 ## Node
 
+Basic SSR.
+
 ```sh
 $ yarn run node
 SSR:  <div style="display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex" data-radium="true" data-reactroot=""></div>
@@ -41,6 +43,8 @@ Output: `babel/dist/esm.js`
 
 ### UMD
 
+A webpage using the UMD dist.
+
 ```sh
 $ yarn run browser:umd
 ```
@@ -49,4 +53,26 @@ $ yarn run browser:umd
 
 ### CommonJS Build
 
+A webpage with a CommonJS build that does **not** use Babel, but uses modern webpack. Because webpack2+ uses `package.json:module` fields, we have to make this adjustment:
+
+```js
+Radium = Radium.default;
+```
+
+See it in action:
+
+```sh
+$ yarn run browser:cjs
+```
+
+(Builds and opens browser to local filesystem).
+
 ### ESM Build
+
+The most standard webpack build.
+
+```sh
+$ yarn run browser:esm
+```
+
+(Builds and opens browser to local filesystem).

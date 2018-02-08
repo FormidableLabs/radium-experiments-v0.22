@@ -1,7 +1,7 @@
 node_modules
 lib
 es
-*/dist
+**/dist
 coverage
 .vscode
 yarn-error.log*
