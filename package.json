@@ -7,5 +7,12 @@
   "license": "MIT",
   "dependencies": {
     "radium": "FormidableLabs/radium#task/es-build-ryan"
+  },
+  "devDependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "scripts": {
+    "node": "node node/index.js"
   }
 }
