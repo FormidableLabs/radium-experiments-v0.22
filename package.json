@@ -1,0 +1,11 @@
+{
+  "name": "radium-experiments-v0.22",
+  "version": "0.0.1",
+  "description": "Experiments for Radium v0.22",
+  "main": "index.js",
+  "author": "Ryan Roemer <ryan.roemer@formidable.com>",
+  "license": "MIT",
+  "dependencies": {
+    "radium": "FormidableLabs/radium#task/es-build-ryan"
+  }
+}
