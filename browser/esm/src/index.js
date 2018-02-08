@@ -2,6 +2,8 @@ import Radium from "radium";
 import React from "react";
 import ReactDOM from "react-dom";
 
+console.log("Radium object", Radium);
+
 class Composed extends React.Component {
   render() {
     return React.createElement('div', {

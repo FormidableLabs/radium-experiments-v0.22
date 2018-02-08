@@ -27,6 +27,8 @@
     "babel:esm": "yarn run babel:esm-build && node -r @std/esm babel/dist/esm.js",
     "browser:umd": "open browser/umd/index.html",
     "browser:cjs-build": "webpack --config=browser/cjs/webpack.config.js",
-    "browser:cjs": "yarn run browser:cjs-build && open browser/cjs/index.html"
+    "browser:cjs": "yarn run browser:cjs-build && open browser/cjs/index.html",
+    "browser:esm-build": "webpack --config=browser/esm/webpack.config.js",
+    "browser:esm": "yarn run browser:esm-build && open browser/esm/index.html"
   }
 }
