@@ -6,7 +6,7 @@
   "author": "Ryan Roemer <ryan.roemer@formidable.com>",
   "license": "MIT",
   "dependencies": {
-    "radium": "FormidableLabs/radium#32d50e4"
+    "radium": "FormidableLabs/radium#75fc5bc55a36467a9eab3cd4e945a599ccbceaac"
   },
   "devDependencies": {
     "@std/esm": "^0.21.0",
