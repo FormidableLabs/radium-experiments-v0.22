@@ -67,6 +67,26 @@ $ yarn run browser:cjs
 
 (Builds and opens browser to local filesystem).
 
+### CommonJS Build with Webpack Alias
+
+A webpage with a CommonJS build that does **not** use Babel, but uses modern webpack. We avoid the adjustment of `Radium = Radium.default;` by adding this alias in our webpack config to force the special index pointed to by `package.json:main`:
+
+```js
+  resolve: {
+    alias: {
+      radium: require.resolve("radium/index")
+    }
+  }
+```
+
+See it in action:
+
+```sh
+$ yarn run browser:cjs-alias
+```
+
+(Builds and opens browser to local filesystem).
+
 ### ESM Build
 
 The most standard webpack build.

@@ -28,6 +28,8 @@
     "browser:umd": "open browser/umd/index.html",
     "browser:cjs-build": "webpack --config=browser/cjs/webpack.config.js",
     "browser:cjs": "yarn run browser:cjs-build && open browser/cjs/index.html",
+    "browser:cjs-alias-build": "webpack --config=browser/cjs-alias/webpack.config.js",
+    "browser:cjs-alias": "yarn run browser:cjs-alias-build && open browser/cjs-alias/index.html",
     "browser:esm-build": "webpack --config=browser/esm/webpack.config.js",
     "browser:esm": "yarn run browser:esm-build && open browser/esm/index.html"
   }
